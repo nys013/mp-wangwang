@@ -1,0 +1,33 @@
+<!--components/search/search.wxml-->
+<view class="{{ focus ? 'searchWrap-focus' : 'searchWrap'}}" bindtap="handleHideDel">
+  <!-- 用遮罩替代原本的整个包含块的背景颜色，开绝对定位，然后层级最低，那么就可以达到点击其他区域触发取消的效果了 -->
+  <view class="{{ focus && 'mask'}}" bindtap="handleCancel"></view>
+  <view class="searchBar">
+    <text class="iconfont icon-sousuo"></text>
+    <input class="input" placeholder="搜索汪星人" bindinput='handleInput' catchfocus='handleFocus' model:value='{{value}}'
+    bindconfirm='handleConfirm'></input>
+    <text catchtap="handleCancel" >取消</text>
+  </view>
+  <view class="historyWrap">
+    <view class="title">
+      <text>历史记录</text>
+      <text class="iconfont icon-shanchu" catchtap="handleDelete"></text>
+    </view>
+    <view class="historyList">
+      <view wx:for='{{historyList}}' wx:key='index' class='btnWrap'>
+        <button class="historyBtn" data-historyValue='{{item}}' catchlongpress='handleShowDel' catchtap="historySearch">{{item}}</button>
+        <text class="iconfont icon-shanchu1 delete" wx:if='{{isDelete}}' 
+        catchtap="deleteOne" data-historyValue='{{item}}'></text>
+      </view>
+    </view>
+  </view>
+  <view class="searchList">
+    <navigator class="searchItem" wx:if='{{searchList.length}}' wx:for='{{searchList}}' wx:key='index'
+    url="{{'/pages/detail/detail?userId=' + item._id }}">
+      <image class="avatar" src="{{item.avatarUrl}}"></image>
+      <text class="nickName">{{item.nickName}}</text>
+      <text class="right-arrow"> > </text>
+    </navigator>
+    <view class="tip" wx:if='{{!searchList.length}}' >未搜到相关汪星人</view>
+  </view>
+</view>

@@ -1,0 +1,10 @@
+.editUserInfoWrap .list-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 25rpx;
+  border-bottom: 1rpx dotted rgb(170, 169, 169);
+}
+.editUserInfoWrap .list-item .tip{
+  color: red;
+  font-size: 12px;
+}

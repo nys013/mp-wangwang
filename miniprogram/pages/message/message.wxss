@@ -1,0 +1,8 @@
+/* miniprogram/pages/message/message.wxss */
+.title{
+  height: 100rpx;
+  background-color: #eee;
+  line-height: 100rpx;
+  width: 100%;
+  text-align: center;
+}

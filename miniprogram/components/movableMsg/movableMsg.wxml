@@ -1,0 +1,12 @@
+<!--components/movableMsg/movableMsg.wxml-->
+<view>
+  <movable-area class='moveWrap'>
+    <movable-view class="moveItem" direction='horizontal'  >
+    <navigator  url="{{'/pages/detail/detail?userId=' + userMsg._id}}" class="avatar">
+      <image class="image" src="{{userMsg.avatarUrl}}"></image>
+    </navigator>
+      <text bindtap="handleAdd" class="nickName">{{userMsg.nickName}}</text>
+    </movable-view>
+    <view class="delete" bindtap="handleDelete">删除</view>
+  </movable-area>
+</view>

@@ -1,0 +1,12 @@
+/* miniprogram/pages/editUserInfo/phoneNum/phoneNum.wxss */
+.phoneNumWrap .btn{
+  width: 100%;
+  background-color: #eee;
+  margin: 0;
+}
+.phoneNumWrap .input{
+  width: 100%;
+  border: 1rpx solid black;
+  height: 60rpx;
+  padding: 0 20rpx ;
+}

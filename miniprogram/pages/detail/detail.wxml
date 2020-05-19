@@ -1,0 +1,36 @@
+<!--miniprogram/pages/detail/detail.wxml-->
+<view class="detailWrap">
+  <button class="btn" wx:if='{{isMe}}' >我</button>
+  <button class="btn" wx:if='{{!isFriend && !isMe}}' bindtap="handleAdd" >添加好友</button>
+  <button class="btn" wx:if='{{isFriend && !isMe}}' >已是好友</button>
+  <view class="info">
+    <view class="info-item">
+      <text class="key">头像</text>
+      <image src="{{userInfo.avatarUrl}}"></image>
+    </view>
+    <view class="info-item">
+      <text class="key">昵称</text>
+      <text class="value">{{userInfo.nickName}}</text>
+    </view>
+    <view class="info-item">
+      <text class="key">个性签名</text>
+      <text class="value">{{userInfo.signature}}</text>
+    </view>
+    <view class="info-item">
+      <text class="key">手机号</text>
+      <block wx:if='{{isFriend || isMe}}'>
+        <text class="value">{{userInfo.phoneNum}}</text>
+        <callPhone wx:if='{{userInfo.phoneNum}}' phoneNum='{{userInfo.phoneNum}}' />
+      </block>
+      <text wx:else>仅好友可见</text>
+    </view>
+    <view class="info-item">
+      <text class="key">微信号</text>
+      <block wx:if='{{isFriend || isMe}}'>
+        <text class="value">{{userInfo.wxNum}}</text>
+        <copyText wx:if='{{userInfo.wxNum}}' wxNum='{{userInfo.wxNum}}' />
+      </block>
+      <text wx:else>仅好友可见</text>
+    </view>
+  </view>
+</view>

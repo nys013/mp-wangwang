@@ -1,0 +1,27 @@
+/* miniprogram/pages/detail/detail.wxss */
+.detailWrap .btn{
+  background-color: #eee;
+  margin: 0;
+  width: 100%;
+  /* height: 100rpx; */
+  line-height: 70rpx;
+}
+.detailWrap .info .info-item image{
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+}
+.detailWrap .info .info-item {
+  display: flex;
+  border-bottom: 1rpx dashed rgb(85, 83, 83);
+  padding: 30rpx ;
+  margin: 0 20rpx;
+  align-items: center;
+}
+.detailWrap .info .info-item .key{
+  font-weight: bold;
+  min-width: 25%;
+}
+.detailWrap .info .info-item .value{
+  margin-right: 10rpx;
+}

@@ -1,0 +1,22 @@
+/* miniprogram/pages/friendList/friendList.wxss */
+.friendListWrap .title{
+  width: 100%;
+  background-color: #eee;
+  line-height: 100rpx;
+  text-align: center;
+}
+.friendItem{
+  border-bottom: 1rpx dashed rgb(126, 126, 126);
+  padding: 10rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.friendItem .avatar{
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+}
+.friendItem .nickName{
+  flex: 0 1 500rpx;
+}

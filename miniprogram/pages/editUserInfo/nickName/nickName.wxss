@@ -1,0 +1,15 @@
+/* miniprogram/pages/editUserInfo/nickName/nickName.wxss */
+.nickNameWrap .btn{
+  width: 100%;
+  background-color: #eee;
+  margin: 0;
+}
+.nickNameWrap .bottom{
+  border-bottom: 1rpx solid black;
+}
+.nickNameWrap .input{
+  width: 100%;
+  border: 1rpx solid black;
+  height: 60rpx;
+  padding: 0 20rpx ;
+}

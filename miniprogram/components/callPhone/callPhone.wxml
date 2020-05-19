@@ -1,0 +1,2 @@
+<!--components/copyText.wxml-->
+<text class="iconfont icon-dianhua" bindtap="handleCall"></text>

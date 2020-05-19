@@ -1,0 +1,5 @@
+<view class="avatarWrap">
+  <button  class="btn" open-type="getUserInfo" bindgetuserinfo="bindgetuserinfo">使用微信头像</button>
+  <button  class="btn" bindtap="handleEdit">自定义头像</button>
+  <image src="{{avatarUrl}}" class="avatar" bindtap="uploadPic"></image>
+</view>

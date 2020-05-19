@@ -1,0 +1,12 @@
+
+.wxNumWrap .btn{
+  width: 100%;
+  background-color: #eee;
+  margin: 0;
+}
+.wxNumWrap .input{
+  width: 100%;
+  border: 1rpx solid black;
+  height: 60rpx;
+  padding: 0 20rpx ;
+}

@@ -1,0 +1,6 @@
+<!--miniprogram/pages/editUserInfo/nickName/nickName.wxml-->
+<view class="nickNameWrap">
+  <button  class="btn bottom" open-type="getUserInfo" bindgetuserinfo="bindgetuserinfo">使用微信昵称</button>
+  <button  class="btn" bindtap="handleEdit">自定义昵称</button>
+  <input type="text" model:value="{{nickName}}" class="input"></input>
+</view>

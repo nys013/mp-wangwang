@@ -1,0 +1,61 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/my/my",
+    "pages/editUserInfo/editUserInfo",
+    "pages/friendList/friendList",
+    "pages/editUserInfo/avatar/avatar",
+    "pages/editUserInfo/nickName/nickName",
+    "pages/editUserInfo/phoneNum/phoneNum",
+    "pages/editUserInfo/location/location",
+    "pages/editUserInfo/wxNum/wxNum",
+    "pages/editUserInfo/signature/signature",
+    "pages/message/message",
+    "pages/detail/detail",
+    "pages/near/near"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#E456FA",
+    "navigationBarTitleText": "旺旺的旺星人",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "tabBar": {
+    "color": "#3B3338",
+    "selectedColor": "#E456FA",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./images/icon/首页.png",
+        "selectedIconPath": "./images/icon/首页-active.png"
+      },
+      {
+        "pagePath": "pages/near/near",
+        "text": "附近",
+        "iconPath": "./images/icon/附近.png",
+        "selectedIconPath": "./images/icon/附近-active.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "消息",
+        "iconPath": "./images/icon/消息.png",
+        "selectedIconPath": "./images/icon/消息-active.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "./images/icon/我的.png",
+        "selectedIconPath": "./images/icon/我的-active.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  }
+}

@@ -1,0 +1,4 @@
+<view class="locationWrap"> 
+  <text>开启共享位置:</text>
+  <switch type="switch" bindchange="handleChange" checked='{{isLocationOpen}}'></switch>
+</view>
