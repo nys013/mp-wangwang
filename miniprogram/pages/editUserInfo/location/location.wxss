@@ -1,0 +1,6 @@
+.locationWrap{
+  padding: 20rpx;
+}
+.locationWrap switch{
+  margin-left:20rpx ;
+}

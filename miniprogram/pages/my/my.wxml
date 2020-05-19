@@ -1,0 +1,22 @@
+<!--miniprogram/pages/my/my.wxml-->
+<view class="my-wrap">
+  <view class="header">
+    <image src="{{avatarUrl}}"></image>
+    <text wx:if='{{logged}}' class="nickName">欢迎：{{nickName}}</text>
+    <button wx:else class="btn" open-type="getUserInfo" bindgetuserinfo="bindgetuserinfo" >微信登录</button>
+  </view>
+  <view class="list">
+    <navigator class="list-item" url="/pages/editUserInfo/editUserInfo">
+      <text class="text">编辑个人信息</text>
+      <text class="arrow-right"> > </text>
+    </navigator>
+    <navigator class="list-item" url="/pages/friendList/friendList">
+      <text class="text">查看好友列表</text>
+      <text class="arrow-right"> > </text>
+    </navigator>
+    <navigator class="list-item" url="{{'/pages/detail/detail?userId=' + id}}">
+      <text class="text">个人主页</text>
+      <text class="arrow-right"> > </text>
+    </navigator>
+  </view>
+</view>

@@ -1,0 +1,8 @@
+/* miniprogram/pages/near/near.wxss */
+.mapWrap map{
+  width: 100%;
+  height: 100%;
+}
+.mapWrap {
+  height: 100%;
+}

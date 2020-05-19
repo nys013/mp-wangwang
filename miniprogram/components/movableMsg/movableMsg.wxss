@@ -1,0 +1,39 @@
+/* components/movableMsg/movableMsg.wxss */
+.moveWrap {
+  position: relative;
+  width: 100%;
+  height: 160rpx;
+  background-color: white;
+}
+.moveItem{
+  width: 80%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  margin-left: 20%;
+}
+.moveItem .avatar{
+  position: absolute;
+  left: -22%;
+  top: 10rpx;
+}
+.moveItem .image{
+  width:140rpx ;
+  height: 140rpx;
+  border-radius: 50%;
+}
+.moveItem .nickName{
+  margin-left: 30rpx;
+  width: 100%;
+  height: 100%;
+  line-height: 160rpx;
+}
+.moveWrap .delete{
+  height: 100%;
+  width: 20%;
+  float: right;
+  background-color: pink;
+  text-align: center;
+  line-height: 160rpx;
+}

@@ -1,0 +1,27 @@
+/* miniprogram/pages/my/my.wxss */
+.header{
+  border: 1rpx solid #E456FA;
+  display: flex;
+  align-items: center;
+  padding: 30rpx;
+}
+.header image{
+  width: 140rpx;
+  height: 140rpx;
+  margin-right: 20rpx;
+  border-radius: 50%;
+}
+.header .btn{
+  width: 250rpx;
+  background-color: rgb(170, 169, 169);
+  font-weight: 400;
+  color: white;
+  margin: 0;
+}
+
+.list .list-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 25rpx;
+  border-bottom: 1rpx dotted rgb(170, 169, 169);
+}

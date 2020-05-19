@@ -1,0 +1,12 @@
+<!--miniprogram/pages/friendList/friendList.wxml-->
+<view class="friendListWrap">
+  <view class="title">好友列表</view>
+  <view class="listWrap">
+    <navigator url="{{'/pages/detail/detail?userId=' + item._id }}" 
+      class="friendItem" wx:for='{{friendList}}' wx:key='index'>
+      <image class="avatar" src="{{item.avatarUrl}}"></image>
+      <text class="nickName">{{item.nickName}}</text>
+      <text class="right-arrow"> > </text>
+    </navigator>
+  </view>
+</view>

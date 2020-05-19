@@ -1,0 +1,2 @@
+<!--components/copyText/copyText.wxml-->
+<text class="iconfont icon-fuzhi" bindtap="handleCopy"></text>

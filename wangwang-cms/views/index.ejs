@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="/javascripts/axios.min.js"></script>
+  </head>
+  <body>
+    <h1>旺旺-CMS管理系统</h1>
+
+    <label for="">
+      上传图片：<input type="file" id="uploadBtn">
+    </label>
+    <script>
+      // 获取input
+      var uploadBtn = document.getElementById('uploadBtn');
+      // 当文件上传触发
+      uploadBtn.onchange = function(ev){
+        // 从event对象中获取到文件
+        var file = ev.target.files[0];
+        // 创建FormData表单对象，接口提供了一种表示表单数据的键值对的构造方式，经过它的数据可以使用 XMLHttpRequest.send() 方法送出
+        var param = new FormData();
+        // 向FormData中添加新的属性值
+        param.append('file' , file);
+        // 设置请求头配置，因为传的不是一般json对象，而是二进制文件
+        var config = {
+          headers : {
+            'Content-Type' : 'multipart/form-data'
+          }
+        };
+        // 利用第三方库axios发送ajax的post请求，需要url,data，因为传文件就不能是默认配置，所以还有传配置
+        axios.post('/uploadBannerImg',param , config).then((res)=>{
+          // 获取到结果后打印查看一下（不做也行）
+          console.log( res.data );
+        });
+  
+      };
+      </script>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+
+var thumbsFormat = function(thumbs){
+  if (thumbs > 10000) {
+    return (thumbs/10000).toFixed(2) + 'w'
+  }else{
+    return thumbs
+  }
+}
+
+module.exports = thumbsFormat

@@ -1,0 +1,4 @@
+<view class="signatureWrap">
+  <button class="btn" bindtap="handleEdit">点击修改</button>
+  <input type="text" model:value="{{value}}" class="input" />
+</view>

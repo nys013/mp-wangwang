@@ -1,0 +1,26 @@
+<view class="editUserInfoWrap">
+  <navigator class="list-item" url="/pages/editUserInfo/avatar/avatar">
+    <text class="text">修改头像</text>
+    <text class="arrow-right"> > </text>
+  </navigator>
+  <navigator class="list-item" url="/pages/editUserInfo/nickName/nickName">
+    <text class="text">修改昵称</text>
+    <text class="arrow-right"> > </text>
+  </navigator>
+  <navigator class="list-item" url="/pages/editUserInfo/signature/signature">
+    <text class="text">修改个性签名</text>
+    <text class="arrow-right"> > </text>
+  </navigator>
+  <navigator class="list-item" url="/pages/editUserInfo/location/location">
+    <text class="text">共享位置</text>
+    <text class="arrow-right"> > </text>
+  </navigator>
+  <navigator class="list-item" url="/pages/editUserInfo/phoneNum/phoneNum">
+    <text class="text">手机号 <text class="tip">仅好友可见</text> </text>
+    <text class="arrow-right"> > </text>
+  </navigator>
+  <navigator class="list-item" url="/pages/editUserInfo/wxNum/wxNum">
+    <text class="text" >微信号 <text class="tip">仅好友可见</text> </text>
+    <text class="arrow-right"> > </text>
+  </navigator>
+</view>

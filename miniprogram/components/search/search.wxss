@@ -1,0 +1,88 @@
+/* components/search/search.wxss */
+.searchWrap{
+  height: 100rpx;
+  overflow: hidden;
+}
+.searchWrap-focus{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgb(126, 126, 126); */
+  overflow: hidden;
+}
+.mask{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: rgb(126, 126, 126);
+}
+.searchBar{
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  padding: 0 20rpx;
+}
+.searchBar .input{
+  border: 1rpx solid rgb(126, 126, 126);
+  border-radius: 20rpx;
+  background-color: #f6f6f6;
+  height: 60rpx;
+  flex: 1;
+  margin: 0 20rpx;
+  padding: 0 20rpx;
+}
+.historyWrap{  padding: 20rpx; }
+.historyWrap .title{
+  display: flex;
+  justify-content: space-between;
+  margin: 10rpx 0;
+}
+.historyWrap .historyList{
+  display: flex;
+  flex-wrap: wrap;
+}
+.historyWrap .btnWrap{
+  position: relative;
+}
+.historyWrap .historyBtn{
+  background-color: #f6f6f6;
+  border-radius: 20rpx;
+  width: initial;
+  margin: 10rpx;
+  font-size: 30rpx;
+  padding: 10rpx 20rpx;
+}
+.historyList .delete{
+  font-size: 30rpx;
+  font-weight: bold;
+  /* display: block; */
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  color: rgb(73, 73, 73);
+}
+.searchList .searchItem{
+  border-bottom: 1rpx dashed rgb(91, 90, 90);
+  padding: 10rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.searchItem .avatar{
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+}
+.searchItem .nickName{
+  flex: 0 1 500rpx;
+}
+.searchList .tip{
+  width: 100%;
+  text-align: center;
+  line-height: 100rpx;
+}

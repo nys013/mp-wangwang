@@ -1,0 +1,8 @@
+<!--miniprogram/pages/message/message.wxml-->
+<view wx:if='{{logged}}'>
+  <view wx:if='{{!messageList.length}}' class="title">暂无消息</view>
+  <view wx:else>
+    <view class="title">消息列表</view>
+    <movableMsg binddelete='deleteEvent' wx:for='{{messageList}}' wx:key='index' msgId='{{item}}' />
+  </view>
+</view>

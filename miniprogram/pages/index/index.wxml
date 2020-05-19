@@ -1,0 +1,28 @@
+<!--miniprogram/pages/index/index.wxml-->
+<view class="index-wrap">
+  <search/>
+  <swiper class="swiper-wrap" autoplay circular indicator-dots>
+    <block wx:for='{{swiperPics}}' wx:key='index'>
+      <swiper-item>
+        <image class="swiperImage" src="{{item.fileId}}" mode="aspectFill"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="content-wrap">
+    <view class="title">
+      <view class="title-tab {{tab==='thumbs' && 'active'}}" bindtap="handleTab" data-tab="thumbs">最热</view>
+      <view class="title-tab {{tab==='time' && 'active'}}" bindtap="handleTab" data-tab="time" >最新</view>
+    </view> 
+    <view class="content">
+      <view class="content-item" wx:for='{{userList}}' wx:key='index' >
+        <image mode="aspectFill" src="{{item.avatarUrl}}" bindtap="toDetail" data-id='{{item._id}}'></image>
+        <view class="message">
+          <text class="nickName">{{item.nickName}}</text>
+          <wxs src='../../utils/thumbsFormat.wxs' module='thumbsFormat' />
+          <!-- 使用wxs -->
+          <text class="thumb" bindtap="handleThumbs" data-_id="{{item._id}}">{{thumbsFormat(item.thumbs)}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
